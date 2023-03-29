@@ -8,10 +8,3 @@ const [hostname, ...countryCodes] = domain.split(".");
 
 return `${localPart.length}${hostname.length}${countryCodes.reduce( (a,cc) => a + cc.length, "") }`;
 }
-
-
-
-
-const ans = calculateAnswer("ak3754732@gmail.com");
-
-console.log(ans);
